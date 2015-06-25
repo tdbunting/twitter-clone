@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 /* mix-ins, variables, etc.*/
 $gray-medium-light: #eaeaea;
@@ -9,6 +10,12 @@ $gray-medium-light: #eaeaea;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
 }
+
+/* @font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+} */
 
 /* universal */
 
@@ -163,6 +170,11 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+/* to control the height of the input group div*/
+.input-group {
+  margin-bottom: 20px;  
 }
 
 #error_explanation {
